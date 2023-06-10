@@ -11,9 +11,3 @@ router.delete("/:id", autorController.deleteAutor);
 
 
 module.exports = router;
-
-// router.get("/", user.listUsuarios);
-// router.get("/:id", user.getUsuario);
-// router.post("/", user.createUsuarios);
-// router.put("/:id", user.updateUsuario);
-// router.delete("/:id", user.deleteUsuario);

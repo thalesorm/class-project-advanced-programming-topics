@@ -1,8 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const editora = require("../controllers/editoraController");
+const editoraController = require("../controllers/editoraController");
 
-router.get("/", editora.listEditora);
-router.post("/", editora.createEditora);
+router.get("/", editoraController.listEditoras);
+router.get("/:id", editoraController.getEditora);
+router.post("/", editoraController.createEditora);
+router.put("/:id", editoraController.updateEditora);
+router.delete("/:id", editoraController.deleteEditora);
 
 module.exports = router;

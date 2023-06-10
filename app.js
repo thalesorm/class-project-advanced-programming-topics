@@ -31,7 +31,7 @@ app.use("/user", userRoute);
 app.use("/emprestimo", emprestimoRoute);
 app.use("/livro", livroRoute);
 app.use("/resenha", resenhaRoute);
-app.use("/editora", resenhaRoute);
+app.use("/editora", editoraRoute);
 app.use("/autor", autorRoute);
 
 module.exports = app;
