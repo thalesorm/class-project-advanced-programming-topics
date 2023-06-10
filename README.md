@@ -9,6 +9,7 @@ Este projeto trata-se de uma API Rest de um sistema baseando num diagrama de cla
 
 </details>
 
+<details>
   <summary><strong> ⌨️ Como rodar o projeto: </strong></summary><br />
 
 clone o repositorio conforma mostra abaixo:
