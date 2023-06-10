@@ -1,23 +1,11 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const resenha = require ('../controllers/resenhaController');
+const resenhaController = require("../controllers/resenhaController");
 
-router.get("/", resenha.listResenha);
-router.post("/", resenha.createResenha);
+router.get("/", resenhaController.listResenhas);
+router.post("/", resenhaController.createResenha);
+router.get("/:id", resenhaController.getResenha);
+router.put("/:id", resenhaController.updateResenha);
+router.delete("/:id", resenhaController.deleteResenha);
 
 module.exports = router;
-
-
-
-// const express = require("express");
-// const router = express.Router();
-// const controller = require ('../controllers/livroController');
-
-// router.get("/", controller.listLivro);
-// router.post("/", controller.createLivro);
-
-// // router.get("/:id", controller.getUsuario);
-// // router.put("/:id", controller.updateUsuario);
-// // router.delete("/:id", controller.deleteUsuario);
-
-// module.exports = router;
