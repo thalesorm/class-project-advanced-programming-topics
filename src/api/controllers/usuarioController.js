@@ -133,5 +133,24 @@ usuarioController.updateUsuario = async (req, res) => {
   }
 };
 
+usuarioController.deleteUsuario = async (req, res) => {
+  try {
+    const { id } = req.params; // Obtém o ID do usuário a ser excluído
+
+    // Verifica se o usuário existe no banco de dados
+    const usuario = await Usuario.findByPk(id);
+    if (!usuario) {
+      return res.status(404).json({ error: "Usuário não encontrado" });
+    }
+
+    // Exclui o usuário
+    await usuario.destroy();
+
+    res.status(200).json({ message: "Usuário excluído com sucesso" });
+  } catch (error) {
+    res.status(500).json({ error: "Erro ao excluir o usuário" });
+  }
+};
+
 
 module.exports = usuarioController;
