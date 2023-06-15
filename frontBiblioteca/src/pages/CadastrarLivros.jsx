@@ -4,6 +4,7 @@ import axios from "axios";
 
 export default function CadastrarLivros() {
   const [titulo, setTitulo] = useState("");
+  const [autor, setAutor] = useState("");
   const [ano, setAno] = useState("");
   const [isbn, setIsbn] = useState("");
   const [mensagem, setMensagem] = useState("");
@@ -14,7 +15,8 @@ export default function CadastrarLivros() {
 
     const novoLivro = {
       titulo,
-      ano,
+      autor,
+      anoPub: parseInt(ano),
       isbn,
     };
 
@@ -23,6 +25,7 @@ export default function CadastrarLivros() {
 
       setMensagem("Livro cadastrado com sucesso!");
       setTitulo("");
+      setAutor("");
       setAno("");
       setIsbn("");
     } catch (error) {
@@ -43,6 +46,14 @@ export default function CadastrarLivros() {
             type="text"
             value={titulo}
             onChange={(e) => setTitulo(e.target.value)}
+          />
+        </label>
+        <label>
+          Autor:
+          <input
+            type="text"
+            value={autor}
+            onChange={(e) => setAutor(e.target.value)}
           />
         </label>
         <label>

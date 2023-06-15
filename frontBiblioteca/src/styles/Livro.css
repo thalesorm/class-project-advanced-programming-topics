@@ -1,0 +1,57 @@
+.livro-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.livro-card {
+  background-color: #f5f5f5;
+  width: calc(33.33% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.livro-info {
+  margin-bottom: 5px;
+}
+
+.titulo-livro,
+.autor-livro,
+.ano-livro,
+.isbn-livro {
+  font-weight: bold;
+}
+
+.nome-livro,
+.nome-autor,
+.ano-pub-livro,
+.livro-info {
+  margin-left: 5px;
+}
+
+.botoes-livro {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.editar-button-livro {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.excluir-button-livro {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}

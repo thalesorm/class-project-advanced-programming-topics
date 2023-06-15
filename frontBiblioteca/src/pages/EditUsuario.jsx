@@ -47,7 +47,6 @@ export default function EditUsuario({ match }) {
       .put(`http://localhost:3030/user/${user.id}`, updatedUser)
       .then((res) => {
         console.log("Usuário atualizado com sucesso!");
-        // Faça algo após a atualização do usuário, como redirecionar para a tela de lista de usuários
         history.push("/home");
       })
       .catch((err) => {

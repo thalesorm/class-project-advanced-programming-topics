@@ -21,8 +21,8 @@ const getLivro = async (req, res) => {
 
 const createLivro = async (req, res) => {
   try {
-    const { text, nota } = req.body;
-    const livro = await livroModel.create({ text, nota });
+    const { titulo, autor, anoPub, isbn } = req.body;
+    const livro = await livroModel.create({ titulo, autor, anoPub, isbn });
     res.status(201).json(livro);
   } catch (error) {
     res.status(500).json({ error: "Erro ao criar o livro" });
@@ -32,15 +32,17 @@ const createLivro = async (req, res) => {
 const updateLivro = async (req, res) => {
   try {
     const { id } = req.params;
-    const { text, nota } = req.body;
+    const { titulo, autor, anoPub, isbn } = req.body;
 
     const updateLivro = await livroModel.findByPk(id);
     if (!updateLivro) {
       return res.status(404).json({ error: "Livro não encontrado" });
     }
 
-    updateLivro.text = text;
-    updateLivro.nota = nota;
+    updateLivro.titulo = titulo;
+    updateLivro.autor = autor;
+    updateLivro.anoPub = anoPub;
+    updateLivro.isbn = isbn;
     await updateLivro.save();
 
     res.status(200).json(updateLivro);

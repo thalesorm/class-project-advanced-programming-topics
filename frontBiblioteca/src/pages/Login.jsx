@@ -23,17 +23,14 @@ function Login() {
 
       if (authenticatedUser) {
         console.log("Usuário autenticado!");
-        // Faça algo após o usuário ser autenticado, como redirecionar para a tela inicial
         history.push("/home");
       } else {
         setErrorMessage("Login ou senha incorretos");
       }
     } catch (error) {
       console.log("Erro ao autenticar usuário:", error);
-      // Exiba uma mensagem de erro ou tome outra ação adequada
     }
 
-    // Limpe os campos de login e senha após o envio do formulário
     setLogin("");
     setSenha("");
   };

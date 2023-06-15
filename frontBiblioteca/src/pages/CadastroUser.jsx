@@ -30,7 +30,7 @@ export default function Cadastro() {
         setEmail("");
         setLogin("");
         setSenha("");
-        history.push("/home"); // Redireciona para a tela Home
+        history.push("/home");
       })
       .catch((err) => console.log(ERROR, err));
   };

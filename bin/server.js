@@ -15,7 +15,7 @@ function normalizaPort(val) {
 }
 
 // Sincronize os modelos com o banco de dados
-db.sync()
+db.sync() //{ force: true } usar para dropar o banco
   .then(() => {
     console.log("Modelos sincronizados com o banco de dados.");
     // Inicie o servidor Express após sincronizar os modelos

@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/Header.css";
 
 function Header() {
   return (
     <header>
-      <button>Livros</button>
-      <button>Emprestimos</button>
-      <button>Usuários</button>
+      <Link to="/home">
+        <button>Usuários</button>
+      </Link>
+      <Link to="/livros">
+        <button>Livros</button>
+      </Link>
+      <button>Empréstimos</button>
     </header>
   );
 }

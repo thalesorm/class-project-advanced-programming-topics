@@ -5,7 +5,8 @@ import Home from "../pages/Home";
 import Cadastro from "../pages/CadastroUser";
 import Livro from "../pages/Livro";
 import CadastrarLivros from "../pages/CadastrarLivros";
-import EditUsuario from "../pages/EditUsuario"; // Importe o componente EditUsuario
+import EditUsuario from "../pages/EditUsuario";
+import EditLivro from "../pages/EditLivro";
 
 export default function Routes() {
   return (
@@ -16,7 +17,7 @@ export default function Routes() {
       <Route exact path="/livros" component={Livro} />
       <Route exact path="/cadastrar-livros" component={CadastrarLivros} />
       <Route exact path="/edit-usuario/:id" component={EditUsuario} />{" "}
-      {/* Adicione a rota para o componente EditUsuario com o parâmetro id */}
+      <Route exact path="/edit-livro/:id" component={EditLivro} />{" "}
     </Switch>
   );
 }
