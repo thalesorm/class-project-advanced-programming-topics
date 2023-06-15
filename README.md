@@ -27,27 +27,22 @@ Aplicação rodando tem a seguinte aparência:
 <summary><strong>🛠 Execução e Testes</strong></summary><br />
 
 Após clonar o reposítorio:
-`git clone git@github.com:thalesorm/class-project-advanced-programming-topics.git` 
+```git clone git@github.com:thalesorm/class-project-advanced-programming-topics.git```
 
 Na pasta raiz, instale as dependências no lado servidor rodando no terminal o comando:
-`npm install`
+```npm install```
 
 Em seguida, acesse o diretório frontBiblioteca e instale as depencencias no lado cliente com o comando:
-`npm install`
+```npm install```
 
 Para executar em seu navegador é necessário fazer as configurações necessárias com o banco de dados e em seguida, na raiz do projeto e dentro do diretório frontBiblioteca o seguinte comando:
-`npm start`
+```npm start```
 
 *Lembrando que você precisa ter o node instalado em sua máquina!
 
 
-Testes 100%/100%
-![All Tests](./Resultado%20dos%20testes.jfif)
-
 
 </details>
-  
-
 
 <br />
 
