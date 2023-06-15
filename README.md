@@ -27,19 +27,18 @@ Aplicação rodando tem a seguinte aparência:
 <summary><strong>🛠 Execução e Testes</strong></summary><br />
 
 Após clonar o reposítorio:
-<br />
 ```git clone git@github.com:thalesorm/class-project-advanced-programming-topics.git```
 
-Na pasta raiz, instale as dependências no lado servidor rodando no terminal o comando:
+ - 1 Na pasta raiz, instale as dependências no lado servidor rodando no terminal o comando:
 ```npm install```
 
-Em seguida, acesse o diretório frontBiblioteca e instale as depencencias no lado cliente com o comando:
+ - 2 Acesse o diretório frontBiblioteca e instale as depencencias no lado cliente com o comando:
 ```npm install```
 
-Para executar em seu navegador é necessário fazer as configurações necessárias com o banco de dados e em seguida, na raiz do projeto e dentro do diretório frontBiblioteca o seguinte comando:
+ - 3 Para executar em seu navegador é necessário fazer as configurações necessárias com o banco de dados e em seguida, na raiz do projeto e dentro do diretório frontBiblioteca o seguinte comando:
 ```npm start```
 
-*Lembrando que você precisa ter o node instalado em sua máquina!
+* Lembrando que você precisa ter o node instalado em sua máquina!
 
 
 
