@@ -52,4 +52,3 @@ Após clonar o reposítorio:
 Este projeto foi desenvolvido por Thales Santos, estudante do 9º período do curso de Engenharia da Computação no Centro Universitário Mário Pontes Jucá. A aplicação é uma biblioteca online, criada com o objetivo de permitir o gerenciamento de usuários e a exibição de informações sobre livros. Através dela, os usuários podem visualizar, cadastrar, editar e excluir usuários, além de acessar uma lista de livros disponíveis. O projeto utiliza tecnologias como React, React Router, Axios, Sequelize e MySQL para a implementação das funcionalidades no lado do cliente e do servidor.
 
 </details>
-  
