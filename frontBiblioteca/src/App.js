@@ -1,24 +1,14 @@
 import React from 'react'
 import Routes from './routes/Routes';
+import { UserProvider } from './context/UserContext'
 
 function App() {
   return (
-    <div>
-      <Routes />
-    </div>
+    <UserProvider>
+      <div>
+        <Routes />
+      </div>
+    </UserProvider>
   )
 }
 export default App;
-
-// // import './App.css';
-// import Routes from "./routes/Routes";
-
-// function App() {
-//   return (
-//     <section>
-//       <Routes />
-//     </section>
-//   );
-// }
-
-// export default App;

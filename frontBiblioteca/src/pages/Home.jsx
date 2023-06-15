@@ -8,6 +8,7 @@ const ERROR = "Ops, temos um problema:";
 
 function Home() {
   const [users, setUsers] = useState([]);
+  const history = useHistory();
 
   useEffect(() => {
     getUsers();
@@ -19,8 +20,6 @@ function Home() {
       .then((res) => setUsers(res.data))
       .catch((err) => console.log(ERROR, err));
   };
-
-  const history = useHistory();
 
   const handleCadastroClick = () => {
     history.push("/cadastro");
